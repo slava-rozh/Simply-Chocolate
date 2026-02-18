@@ -1,332 +1,791 @@
-/* @font-face {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-style: normal;
-  src: url(../fonts/Montserrat-Regula.ttf);
-}
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-style: normal;
-  src: url(../fonts/Montserrat-Medium.ttf);
-} */
-
-/* #region Base styles */
-body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #111111;
-    letter-spacing: -0.02em;
-    background-color: #fafafa;
-}
-
-/* Reset */
-ul,
-ol {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: currentColor;
-}
-
-button {
-    cursor: pointer;
-}
-
-address {
-    font-style: normal;
-}
-
-/* #endregion */
-
-/* #region Common */
-.visually-hidden,
-.read-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.section-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.accent-text {
-    color: #fd9222;
-        font-weight: 700;
+  /* @font-face {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-style: normal;
+      src: url(../fonts/Montserrat-Regula.ttf);
     }
+    @font-face {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-style: normal;
+      src: url(../fonts/Montserrat-Medium.ttf);
+    } */
 
-/* #endregion */
+  /* #region Base styles */
+  body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: #111111;
+      letter-spacing: -0.02em;
+      background-color: #fafafa;
+  }
 
-/* #region Header */
-.header {}
+  /* Reset */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+      margin: 0;
+  }
 
-.nav {}
+  ul,
+  ol {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+  }
 
-.header-link {
-    font-style: italic;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.11111;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: #111;
-}
+  a {
+      text-decoration: none;
+      color: currentColor;
+  }
 
-.nav-menu {}
+  button {
+      padding: 0;
+      border: 1px solid transparent;
+      background-color: none;
+      cursor: pointer;
+  }
 
-.nav-menu-item {}
+  address {
+      font-style: normal;
+  }
 
-.nav-menu-link {
-    font-weight: 500;
-    line-height: 1.14;
-}
+  img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
 
-.nav-menu-link:hover,
-.nav-menu-link:focus {
-    color: #fd9222;
-}
+  /* #endregion */
 
-/* #endregion */
+  /* #region Common */
+  .visually-hidden,
+  .read-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
 
-/* #region Socials */
-.socials {}
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+  }
 
-.socials-item {}
+  .section {
+      padding: 60px 0;
+  }
 
-.socials-link {}
+  .section-title {
+      width: 412px;
+      margin: 0 auto 50px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      text-align: center;
+  }
 
-.socials-icon {}
+  .accent-text {
+      color: #fd9222;
+      font-weight: 700;
+  }
 
-/* #endregion */
+  .container {
+      max-width: 1168px;
+      width: 100%;
+      padding: 0 16px;
+      margin: 0 auto;
+      /* outline: 2px solid red;
+              outline-offset: -2px; */
+  }
 
-/* #region Logo */
-.logo {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #111;
-}
+  /* #endregion */
 
-.logo-icon {}
+  /* #region Header */
+  .header {
+      width: 100%;
 
-/* #endregion */
+  }
 
-/* #region Hero */
-.hero {
-    background-color: rgba(17, 17, 17, 0.4);
-}
+  .header .container {
 
-.hero-title {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21;
-    letter-spacing: -0.03em;
-    color: #fff;
-}
+      display: flex;
+      align-items: center;
+  }
 
-.hero-link {
-    font-weight: 500;
-    line-height: 1.29;
-    letter-spacing: -0.03em;
-    color: #fff;
-}
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+      padding: 20px 0;
+      margin-right: 90px;
 
-.hero-link-icon {}
+  }
 
-/* #endregion */
+  .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+  }
 
-/* #region Buttons */
-.btn {
-    font-weight: 600;
-    color: #fff;
-    background-color: transparent;
-}
 
-.btn-accent {
-    background-color: #fd9222;
-}
 
-.btn-primary {}
+  .header-link {
+      font-style: italic;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.11111;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: #111;
+  }
 
-.btn-secondary {
-    font-size: 18px;
-    color: #111;
-}
 
-/* #endregion */
+  .nav-menu-link {
+      display: block;
+      padding: 12px 0;
+      font-weight: 500;
+      line-height: 1.14;
+  }
 
-/* #region Benefits */
-.benefits {
-    background-color: #1e1823;
-}
+  .nav-menu-link:hover,
+  .nav-menu-link:focus {
+      color: #fd9222;
+  }
 
-.benefits-list {}
+  /* #endregion */
 
-.benefits-item {}
+  /* #region Socials */
+  .socials {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-left: auto;
+  }
 
-.benefits-caption {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22222;
-    color: #fff;
-}
+  .socials-item {
+      width: 40px;
+      height: 40px;
+  }
 
-.benefits-desc {
-    font-weight: 400;
+  .socials-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      border-radius: 10px;
+  }
+
+  .socials-link:hover,
+  .socials-link:focus {
+      border-color: rgba(253, 146, 34, 0.1);
+  }
+
+
+
+  /* #endregion */
+
+  /* #region Logo */
+  .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.11;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: #111;
+  }
+
+  .logo-icon {
+      display: inline-flex;
+      align-items: center;
+  }
+
+  /* #endregion */
+
+  /* #region Hero */
+  .hero {
+      padding-bottom: 80px;
+      background: #fafafa;
+
+  }
+
+  .hero-wrapper {
+      padding: 300px 40px 40px;
+      border-radius: 30px;
+      background-color: rgba(17, 17, 17, 0.4);
+  }
+
+  .hero-title {
+      width: 484px;
+      margin-bottom: 32px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 1.21;
+      letter-spacing: -0.03em;
+      color: #fff;
+  }
+
+  .hero-bottom {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+  }
+
+  .hero-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      margin-left: auto;
+      font-weight: 500;
+      line-height: 1.29;
+      letter-spacing: -0.03em;
+      color: #fff;
+  }
+
+  .hero-link-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: #fff;
+  }
+
+
+
+  /* #endregion */
+
+  /* #region Buttons */
+  .btn {
+      padding: 14px 40px;
+      font-weight: 600;
+      color: #fff;
+      background-color: transparent;
+  }
+
+  .btn-accent {
+      background-color: #fd9222;
+  }
+
+  .btn-primary {
+      border-color: #fff;
+  }
+
+
+
+  .btn-secondary {
+      font-size: 18px;
+      color: #111;
+      border-color: #fd9222;
+  }
+
+  /* #endregion */
+
+  /* #region Benefits */
+  .benefits {
+      padding: 50px 0;
+      background-color: #1e1823;
+  }
+
+  .benefits-list {
+      display: flex;
+      justify-content: center;
+      gap: 88px;
+  }
+
+  .benefits-item {
+      width: 308px;
+  }
+
+  .benefits-caption {
+      margin-bottom: 18px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: #fff;
+  }
+
+  .benefits-desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.28571;
+      letter-spacing: -0.02em;
+      color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* #endregion */
+
+  /* #region Ingredients */
+  .ingredients {
+      padding-top: 120px;
+      background: #fff;
+  }
+
+
+
+  .ingredients-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+  }
+
+  .ingredients-item {
+      width: calc((100% - 32px * 3) / 4);
+      padding: 28px 23px;
+      border: 1px solid transparent;
+      border-radius: 15px;
+  }
+
+  .ingredients-item:nth-child(2n) {
+      border-color: #fd9222;
+  }
+
+  .ingredients-item:nth-child(4n + 1) {
+      background-color: #fd9222;
+      color: #fff;
+  }
+
+  .ingredients-item:nth-child(4n + 3) {
+      background-color: #1e1823;
+      color: #fff;
+  }
+
+  .ingredients-ill {
+      margin-bottom: 36px;
+  }
+
+  .ingredients-subtitle {
+      font-weight: 600;
+      line-height: 1.28571;
+      letter-spacing: -0.02em;
+      color: #111;
+  }
+
+  .ingredients-subtitle.white-text {
+      color: #fff;
+  }
+
+  /* #region Bestsellers */
+  .bestsellers {
+      display: flex;
+      margin: 60px 50px;
+      background: #fafafa;
+  }
+
+  .bestsellers-list {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .bestsellers-item {
+      width: calc((100% - 16px * 2) / 3);
+      border-radius: 15px 15px 0 0;
+      overflow: hidden;
+  }
+
+
+  .bestsellers-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: auto;
+      padding: 28px 0;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+  }
+
+  .bestsellers-caption {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.33;
+      text-transform: uppercase;
+      text-align: center;
+  }
+
+  /* #endregion */
+
+  /* #region Reviews */
+  .reviews {
+      padding: 120px 0;
+  }
+
+  .section-title {
+      margin-bottom: 60px;
+      text-align: center;
+  }
+
+  .review-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 18px;
+      font-weight: 600;
+      margin-bottom: 24px;
+
+  }
+
+  .review-desc {
+      padding: 24px auto;
+      line-height: 1.28571;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: rgba(17, 17, 17, 0.7);
+      font-weight: 400;
+
+  }
+
+  .review-list {
+      margin-top: 92px;
+      display: flex;
+      gap: 28px;
+      margin-bottom: 50px;
+  }
+
+  .review-ill {
+      display: block;
+      margin: 0 auto 18px;
+      border-radius: 100%;
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .review-item {
+      position: relative;
+      flex: 1;
+      padding: 60px 18px 24px;
+      width: calc((100% - 28px * 2) / 3);
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.1);
+      background: #fff;
+  }
+
+
+ 
+
+  .btn-secondary {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: row;
+      gap: 14px;
+      margin: 0 auto 50px;
+      border: 1px solid #fd9222;
+      border-radius: 100px;
+      padding: 14px 40px;
+      width: 222px;
+      height: 50px;
+  }
+
+  /* #endregion */
+
+  /* #endregion */
+
+  /* #region Made */
+  .made {
+      padding: 120px;
+  }
+
+  .made-title {
+      text-align: center;
+      margin-bottom: 50px;
+
+  }
+
+  .made-wrapper {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+  }
+
+  .made-img {
+      border-radius: 15px;
+      max-width: 600px;
+      width: 100%;
+  }
+
+  .made-content {
+      background: #fff;
+      padding: 32px;
+      max-width: 500px;
+  }
+
+  .made-caption {
+      margin-bottom: 28px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.33333;
+      color: #111;
+  }
+
+  .made-recipe {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+  }
+
+  .made-recipe-item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.28571;
+      letter-spacing: -0.02em;
+      color: #111;
+  }
+
+  .made-recipe-item::before { 
+    content: "";
+    /* Створюємо порожній маркер */
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid whitesmoke;
+    /* Кольорова межа */
+    border-radius: 50%;
+    /* Робимо маркер круглим */
+    margin-right: 10px;
+    background-color: gray;
+  }
+
+
+  /* #endregion */
+
+  /* #region Products */
+  .products {
+      display: flex;
+      margin-top: 0 60px;
+
+  }
+
+  .products-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 18px;
+
+  }
+
+  .products-caption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.33333;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+  }
+
+  .products-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 18px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16667;
+      letter-spacing: -0.02em;
+      color: rgba(17, 17, 17, 0.7);
+  }
+
+  .products-item {
+      width: calc((100% - 18px * 3) / 4);
+      padding: 32px 20px;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      border-radius: 15px;
+  }
+
+  .products-ill {
+      margin-bottom: 8px;
+  }
+
+  .products-btn {
+      display: block;
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 14px;
+      color: #111;
+      white-space: nowrap;
+      gap: 14px;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      border-radius: 100px;
+      width: 94px;
+      background: #fafafa;
+      padding: 8px 20px;
+  }
+
+
+
+  /* #endregion */
+ 
+  .section-desc {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.33333;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+  }
+
+  /* #region Review */
+ 
+
+  .review-name {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.33333;
+      text-align: center;
+  }
+
+  .review-desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.28571;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: rgba(17, 17, 17, 0.7);
+  }
+
+  /* #region Footer */
+
+  .footer {
+      padding: 50px 0;
+      background-color: #1e1823;
+  }
+
+
+  .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 50px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 24px;
+  }
+
+  .footer-slogan {
+      width: 300px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 1.21429;
+      letter-spacing: -0.02em;
+      color: #fff;
+  }
+
+  .footer-contacts-wrapper {
+      display: flex;
+      gap: 50px;
+  }
+
+  .socials {
+      display: flex;
+      gap: 12px;
+  }
+
+  .footer-address {
+      font-style: normal;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .footer-address .footer-caption {
+      margin-bottom: 14px;
+  }
+
+  .footer-social-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+  }
+
+  .footer-caption {
+      margin-bottom: 14px;
+      font-weight: 500;
+      line-height: 1.28571;
+      color: #fff;
+  }
+
+  .socials-icons {
+      display: inline-block;
+      filter: brightness(0) invert(1);
+  }
+
+  .footer-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+  }
+
+  .footer-contacts-item {
+      font-weight: 400;
+      line-height: 1.28571;
+      letter-spacing: -0.02em;
+      color: #fff;
+  }
+
+
+  .menu {
+      display: flex;
+      gap: 24px;
+      padding: 0;
+
+  }
+
+  .socials-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transition: border-color 0.3s ease;
+  }
+
+  .menu-item {
+      font-weight: 500;
+      line-height: 1.14286;
+      letter-spacing: -0.02em;
+      color: #fff;
     font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    color: rgba(255, 255, 255, 0.7);
-}
+  }
 
-/* #endregion */
+  .menu-link {
+      display: inline-block;
+      padding: 12px 0;
+      font-weight: 500;
+      line-height: 1.14;
+    
 
-/* #region Ingredients */
-.ingredients {}
+  }
 
-.ingredients-title {}
+  /* #endregion */
 
-.ingredients-list {}
 
-.ingredients-item {}
-
-.ingredients-ill {
-    }
-
-.ingredients-subtitle {
-    font-weight: 600;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    color: #111;}
-
-.ingredients-subtitle.white-text {
-color: #fff;
-}
-
-/* #endregion */
-
-/* #region Made */
-.made {}
-
-.made-title {}
-
-.made-img {}
-
-.made-caption {
-    font-weight: 600;
-        font-size: 18px;
-        line-height: 1.33333;
-        color: #111;
-}
-
-.made-recipe {}
-
-.made-recipe-item {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28571;
-        letter-spacing: -0.02em;
-        color: #111;
-}
-
-/* #endregion */
-
-/* #region Products */
-.products-caption {
-font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33333;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-}
-.products-desc {
-font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: -0.02em;
-    color: rgba(17, 17, 17, 0.7);
-}
-.products-item {
-
-}
-/* #endregion */
-.section-list {}
-.section-ill {}
-.section-desc {
-    font-weight: 600;
-        font-size: 18px;
-        line-height: 1.33333;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-}
-/* #region Review */
-.review-list {}
-.review-item {}
-.review-name {font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33333;
-    text-align: center;}
-.review-desc {font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: rgba(17, 17, 17, 0.7);}
-/* #region Footer */
-
-.footer {
-    background-color: #1e1823;
-}
-
-.footer-slogan {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21429;
-    letter-spacing: -0.02em;
-    color: #fff;}
-
-.footer-caption {
-    font-weight: 500;
-    line-height: 1.28571;
-    color: #fff;}
-
-.footer-address {}
-
-.footer-contacts {}
-
-.footer-contacts-item {
-    font-weight: 400;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    color: #fff;}
-
-.footer-contacts-link {}
-
-.menu {}
-
-.menu-item {font-weight: 500;
-    line-height: 1.14286;
-    letter-spacing: -0.02em;
-    color: #fff;}
-
-.menu-link {}
-
-/* #endregion */
+  .footer-slogan {
+      margin-bottom: 18px;
+      font-weight: 600;
+      line-height: 1.22222;
+      color: #fff;
+  }
