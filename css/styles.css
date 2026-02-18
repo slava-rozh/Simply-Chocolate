@@ -444,6 +444,7 @@
   }
 
   .review-desc {
+    width: 312px;
       padding: 24px auto;
       line-height: 1.28571;
       letter-spacing: -0.02em;
